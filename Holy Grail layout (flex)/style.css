@@ -1,0 +1,30 @@
+body{
+   display: flex;
+   flex-direction: column; 
+}
+
+.content{ 
+  display: flex; 
+  height:200px;
+}
+
+main{
+  flex:1;
+  padding:10px;
+}
+
+aside, nav{
+  flex: 0 0 12em;
+  background-color: green; 
+  padding:5px;
+}
+
+nav{
+  order:-1;
+}
+
+footer{
+  background-color: gray; 
+  text-align: center; 
+  padding:5px;
+}

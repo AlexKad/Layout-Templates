@@ -1,0 +1,39 @@
+.header, .footer {
+    clear: both;
+    height: 50px;
+    text-align: center;
+}
+    
+.content {
+    width: 100%;
+    min-width: 1000px;    
+}
+.main, .left, .right {
+    float: left;
+}
+.main {
+    width: 100%;
+}
+.main-inner {
+    margin: 0 200px;
+}
+.left, .right {
+    width: 200px;
+}
+.left {
+    margin-left: -100%;
+} 
+.right {
+    margin-left: -200px;
+}
+
+
+.main-inner, .left, .right {
+    min-height:300px; 
+}
+ .footer { 
+     background-color: gray; 
+ }
+ nav, aside {
+     background-color: green; 
+ }
