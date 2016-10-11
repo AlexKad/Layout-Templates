@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<title>Bootstrap carousel</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="fading-carousel.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">		
+	</head>
+	<body>
+		<div class="container">
+			<div id="slideCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+				
+				<h3>Sliding carousel</h3>
+				<!--carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="slideCarousel" data-slide-to="1" class="active"></li>
+					<li data-target="slideCarousel" data-slide-to="2"></li>
+					<li data-target="slideCarousel" data-slide-to="3"</li>
+				</ol>
+
+				<!--carousel slides -->
+				<div class="carousel-inner">
+
+					<div class="active item green">
+						<!-- <img src="" alt="img"> -->						
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+					<div class="item yellow">
+						<!-- <img src="" alt="img"> -->							
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+					<div class="item orange">
+						<!-- <img src="" alt="img"> -->							
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- left and right controls -->
+				<a class="left carousel-control" href="#slideCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</a>
+				<a class="right carousel-control" href="#slideCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>				    
+				</a>
+			</div>
+
+			<h3>Fading carousel</h3>
+
+			<div id="fadingCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+				
+				<!--carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="fadingCarousel" data-slide-to="1" class="active"></li>
+					<li data-target="fadingCarousel" data-slide-to="2"></li>
+					<li data-target="fadingCarousel" data-slide-to="3"</li>
+				</ol>
+
+				<!--carousel slides -->
+				<div class="carousel-inner">
+
+					<div class="active item green">
+						<!-- <img src="" alt="img"> -->						
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+					<div class="item yellow">
+						<!-- <img src="" alt="img"> -->							
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+					<div class="item orange">
+						<!-- <img src="" alt="img"> -->							
+						<div class="carousel-caption">
+							<h3>Header</h3>
+							<p>Description</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- left and right controls -->
+				<a class="left carousel-control" href="#fadingCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</a>
+				<a class="right carousel-control" href="#fadingCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>				    
+				</a>
+			</div>
+		</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+	</body>
+
+</html>

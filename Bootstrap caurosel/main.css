@@ -1,0 +1,29 @@
+.carousel{
+	margin-top: 20px;
+}
+
+.item{
+	height:300px;
+	text-align: center;
+}
+
+/* to remove default bootstrap gradient */
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
+
+
+
+.green{
+	background-color: #63AB62;
+}
+
+.yellow{
+	background-color: #ffff66;
+}
+
+.orange{
+	background-color: #ffae19;
+}
+
+
