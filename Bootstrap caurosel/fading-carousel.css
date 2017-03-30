@@ -1,0 +1,13 @@
+.carousel-fade .carousel-inner .item{   
+     transition-property: opacity;
+     opcity:0;    
+ }
+
+ .carousel-fade .carousel-inner .active.item{
+ 	opacity:1;
+ }
+ 
+
+ 
+
+ 
