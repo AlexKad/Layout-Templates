@@ -1,0 +1,70 @@
+.container{
+	padding: 10px;
+	height: 100%;
+}
+
+
+.dd-base{
+	width:200px;
+	margin: 20px;	
+}
+.dd-base>input{
+	border-radius: 15px;
+	border: 1px solid #dedede;
+	line-height: 12px;
+	padding: 5px;
+	width: 180px;
+}
+
+.dd-base>input:focus{
+	outline: none;	
+	border-radius: 15px;
+
+	/*the same as default google chrome, but with radius*/
+	border:1px solid #4D90FE;
+     -webkit-box-shadow: 0px 0px 5px  #4D90FE;
+     box-shadow: 0px 0px 5px  #4D90FE;
+}
+
+.dd-base>.arrowDown{
+	color: #a0a0a0;
+	position: relative;
+	right: 30px;
+	cursor: pointer;
+}
+.dd-base>.arrowDown:before{
+	content:"\25BC";	
+}
+
+.dd-base .drop-el{
+	height:150px;
+	width:180px;
+	margin-top: 2px;
+	border: 1px solid #dedede;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 0px 5px #dedede;
+	overflow-y: scroll;
+	position: absolute;
+	z-index: 100;
+}
+
+.drop-el ul{
+	list-style:none;
+	margin:0;
+	padding: 0;
+	width: 160px;
+}
+
+.drop-el ul li{
+	line-height: 12px;
+	padding: 5px;
+	cursor: pointer
+}
+.drop-el ul li:hover{
+	background-color: rgba(77, 144, 254, 0.4);
+
+}
+
+.drop-el ul li.selected{
+	background-color: rgba(0, 200, 0, 0.4);
+}
