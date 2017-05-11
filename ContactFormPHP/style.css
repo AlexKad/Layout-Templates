@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	font-family: Helvetica, sans-serif;
+	
+}
+.page-wrap{
+	padding: 40px;
+	color: #4b585c;
+}
+
+.page-wrap h1{
+	letter-spacing: 1.3px;
+}
+
+
+.contact-form{
+	position:relative;
+	margin-top: 10px;
+	padding:20px;
+	background-color: #4b585c;/*#344D90;*/
+	color: #FFF;
+	border-radius: 10px;
+	max-width: 700px;
+}
+
+.contact-form input,
+.contact-form textarea{
+	padding: 10px;
+	border-radius: 6px;
+	display: block;
+	margin: 15px 0;
+	min-width:500px;
+}
+
+.contact-form button{
+	background-image: linear-gradient(to bottom, #99c432, #7ea521);
+	background-color: #99c432;
+	border: 1px solid #99c432;
+	border-radius: 4px;
+	padding:10px;
+	font-size: 16px;
+	letter-spacing: 1.3px;
+	color: #FFF;
+	width: 160px;
+	margin:10px 0;
+	cursor: pointer;
+	outline: none;
+}
+
+.contact-form button:hover{
+	background-image: linear-gradient(to bottom,  #7ea521, #99c432);
+}
+
+.loader {
+    display:    none;
+    position:   absolute;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/*When the body has the loading class, we turn
+   the scrollbar off*/
+form.loading{
+	overflow:hidden;
+}
+
+form.loading .loader{
+	display: block;
+}
