@@ -1,0 +1,90 @@
+.carousel.multi-item-carousel{
+  padding:40px;
+  color: #636363;
+}
+
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: 500ms ease-in-out left;
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+    -webkit-transform: none!important;
+            transform: none!important;
+}
+.multi-item-carousel .right.carousel-control,
+.multi-item-carousel .left.carousel-control {
+    background-image: none;
+    width: 5%;
+    color: #080808;
+}
+.multi-item-carousel .carousel-control .fa{
+    width: 30px;
+    height: 30px;
+    margin-top: -50px;
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+}
+.multi-item-carousel .right.carousel-control .fa{
+  margin-left: 10px;
+}
+.multi-item-carousel .left.carousel-control .fa{
+  margin-left: 20px;
+}
+
+.item .person{
+  cursor: pointer;
+  width:100%;
+  position: relative;
+}
+
+.person-link:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+.person-link .icon{
+  display:inline;
+  font-size: 20px;
+  color:#337ab7;
+}
+.person-link h4{
+  text-decoration: none;
+  color:#636363;
+}
+
+.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width:100%;
+  height: calc(100% - 55px);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  padding: 25px 10px;
+  line-height: 1.5;
+  letter-spacing: 1.4;
+  font-size:16px;
+  text-align: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.person:hover .text-content {
+  opacity: 1;
+}
